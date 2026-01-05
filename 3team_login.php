@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>로그인 페이지</title>
+<<<<<<< HEAD
     <style>
         body {
             max-width: 800px;
@@ -83,6 +84,9 @@
             color: white;
         }
     </style>
+=======
+    <link rel="stylesheet" href="3team_login.css">
+>>>>>>> d3ea4ac1e1b0f27d472bf23fe819acee54930b7e
 </head>
 
 <body>

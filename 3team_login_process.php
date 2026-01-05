@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>회원가입 페이지</title>
 
+<<<<<<< HEAD
     <style>
         body {
             background-color: #f5f7fb;
@@ -69,6 +70,9 @@
             margin-top: 20px;
         }
     </style>
+=======
+    <link rel="stylesheet" href="3team_login_process.css">
+>>>>>>> d3ea4ac1e1b0f27d472bf23fe819acee54930b7e
 </head>
 
 <body>
