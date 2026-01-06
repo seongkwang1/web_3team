@@ -41,6 +41,16 @@
         <iframe name = 'display' src ='./basket1.html'  height="400" ></iframe>
 
         <h3>내 바구니</h3>
+        <!-- CREATE TABLE `my_subject` (
+            `id`int primary key DEFAULT NULL,
+            `subject_name` char(30) DEFAULT NULL,
+            `subject_credit` int DEFAULT NULL,
+            `professor_name` char(30) DEFAULT NULL,
+            `subject_time` char(40) DEFAULT NULL,
+            `class_room` char(40) DEFAULT NULL,
+            ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+            이렇게 데이터파일을 만들어 주실 수 있나요? -->
+
         <table border = '1'>
             <tr>
                 <th>과목코드</th>
@@ -59,6 +69,8 @@
                 <td>요일/교시</td>
                 <td>강의실</td>
                 <td><button name = subject_romv>삭제</button></td>
+                <!-- 여기서 삭제를 누르면 내 바구니에서 삭제해 주시면서 my_subject에서도
+                 삭제해 주시면 됩니다. -->
             </tr>
         </table>
         <p>aaa</p>

@@ -22,6 +22,9 @@
         <div name = 'search1'>
             <input type="text" placeholder="강의명 검색" name = 'search_subject'>
             <button>검색</button>
+            <?php
+
+            ?>
             <!-- 여기 검색기능 있는데 만들어 주세요. 안될 것 같으면 그냥 지워주시면 됩니다 -->
         </div>
 
@@ -56,7 +59,8 @@
                 <td>요일/교시</td>
                 <td>강의실</td>
                 <td><button name = 'subject_add'>담기</button></td>
-                <!-- 여기서 담기를 누르면 ./basket.html로 가서 내 바구니에 담아주시면 됩니다. -->
+                <!-- 여기서 담기를 누르면 ./basket.html로 가서 내 바구니에 담아주시면서 my_subject라는
+                 DB에 넣어주시면 됩니다. -->
              </tr>
         </table>
         <p>aaa</p>
