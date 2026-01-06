@@ -19,15 +19,6 @@
     <body>
         <h1>수강과목목록</h1>
 
-        <div name = 'search1'>
-            <input type="text" placeholder="강의명 검색" name = 'search_subject'>
-            <button>검색</button>
-            <?php
-
-            ?>
-            <!-- 여기 검색기능 있는데 만들어 주세요. 안될 것 같으면 그냥 지워주시면 됩니다 -->
-        </div>
-
                     <!-- CREATE TABLE `subject` (
             `id`int primary key DEFAULT NULL,
             `subject_name` char(30) DEFAULT NULL,
@@ -38,6 +29,7 @@
             ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
             이렇게 데이터파일을 만들어 주실 수 있나요? -->
 
+    <form action = 'basket.php' method = 'post' enctype="multipart/form-data" target="_parent">
         <table border = '1'>
             <!-- 아래쪽은 예시입니다. 이런 모양으로 만들어주시면 됩니다. -->
             <tr>
@@ -52,17 +44,29 @@
              </tr>
              <tr>
                 
-                <td>과목코드</td>
-                <td>과목명</td>
-                <td>학점</td>
-                <td>담당교수</td>
-                <td>요일/교시</td>
-                <td>강의실</td>
-                <td><button name = 'subject_add'>담기</button></td>
+                <td name = "s_code">0154701</td>
+                <td name = "s_name">이산수학</td>
+                <td name = "s_credit">3</td>
+                <td name = "s_professor">최미영</td>
+                <td name = "s_time">목2,3</td>
+                <td name = "s_room">본부516</td>
+                <td><input type="hidden" name = 's_code' value="0154701">
+                    <input type="hidden" name = 's_name' value="이산수학">
+                    <input type="hidden" name = 's_credit' value="3">
+                    <input type="hidden" name = 's_professor' value="최미영">
+                    <input type="hidden" name = 's_time' value="목2,3">
+                    <input type="hidden" name = 's_room' value="본부516">
+                    <input type="submit" name = 'subject_add' value="담기">
+                </td>
+
                 <!-- 여기서 담기를 누르면 ./basket.html로 가서 내 바구니에 담아주시면서 my_subject라는
                  DB에 넣어주시면 됩니다. -->
              </tr>
+                <?php
+                 // $s_code = $_POST['s_code'];            
+                ?>
         </table>
+    </form>
         <p>aaa</p>
 
         <p>aaa</p>

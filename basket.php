@@ -35,10 +35,10 @@
     </head>
     <body>
         <h1>수강바구니</h1>
-        <a href = './basket1.html'><b>메인화면</b></a>&nbsp;&nbsp;
+        <a href = './basket1.php'><b>메인화면</b></a>&nbsp;&nbsp;
         <br>
         <br>
-        <iframe name = 'display' src ='./basket1.html'  height="400" ></iframe>
+        <iframe name = 'display' src ='./basket1.php'  height="400" ></iframe>
 
         <h3>내 바구니</h3>
         <!-- CREATE TABLE `my_subject` (
@@ -72,6 +72,28 @@
                 <!-- 여기서 삭제를 누르면 내 바구니에서 삭제해 주시면서 my_subject에서도
                  삭제해 주시면 됩니다. -->
             </tr>
+            <?php
+            if (isset($_POST['s_code'])){
+            $s_code = $_POST['s_code'];
+            $s_name = $_POST['s_name'];
+            $s_credit = $_POST['s_credit'];
+            $s_professor = $_POST['s_professor'];
+            $s_time = $_POST['s_time'];
+            $s_room = $_POST['s_room'];
+
+            echo "<tr>
+                <td>$s_code</td>
+                <td>$s_name</td>
+                <td>$s_credit</td>
+                <td>$s_professor</td>
+                <td>$s_time</td>
+                <td>$s_room</td>
+                <td><button name = subject_romv>삭제</button></td>
+                </tr>";
+                }
+
+
+            ?>
         </table>
         <p>aaa</p>
         <p>aaa</p>
